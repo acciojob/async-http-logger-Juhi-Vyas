@@ -1,6 +1,6 @@
 async function getdata() {
-	let res = await axios.get("https://jsonplaceholder.typicode.com/todos/1")
-	console.log(res.data)
+	let res = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+	.then(data=> console.log(res.data))
 }
 
 getdata()
