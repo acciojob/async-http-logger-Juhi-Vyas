@@ -1,2 +1,4 @@
 let res = fetch("https://jsonplaceholder.typicode.com/todos/1")
-	.then(data => {window(consoleLog(res.data))})
+.then(response => response.json)
+.then(data => console.log(data))
+
